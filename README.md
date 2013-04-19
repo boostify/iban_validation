@@ -1,6 +1,6 @@
 # IbanValidation
 
-a ActiveModel::Validations IBAN validator based on IBANTools
+ActiveModel Internation Bank Account Number (IBAN) validator based on IBANTools
 
 ## Installation
 

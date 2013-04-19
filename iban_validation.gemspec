@@ -8,9 +8,13 @@ Gem::Specification.new do |gem|
   gem.version       = IbanValidation::VERSION
   gem.authors       = ["Frank C. Eckert"]
   gem.email         = ["frank.eckert@boost-project.com"]
-  gem.description   = %q{a ActiveModel::Validations IBAN validator}
-  gem.summary       = %q{a ActiveModel::Validations IBAN validator}
-  gem.homepage      = ""
+  gem.description   = <<-EOF
+    IbanValidation provides a simple ActiveModel::EachValidator for
+    formally validating International Bank Account Numbers (IBAN).
+    It is based on the IBANTools gem.
+  EOF
+  gem.summary       = %q{ActiveModel IBAN validator}
+  gem.homepage      = "https://github.com/opahk/iban_validation"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
