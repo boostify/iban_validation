@@ -1,5 +1,7 @@
-require "iban_validation/iban_validator"
-require "iban_validation/version"
+require 'active_model'
+require 'iban-tools'
+require 'iban_validation/iban_validator'
+require 'iban_validation/version'
 
 module IbanValidation
 end
