@@ -18,9 +18,25 @@ Or install it yourself as:
 
 ## Usage
 
-In your rails model
+### Basic IBAN validator (format only)
+
+In your rails model:
 
     validates :iban_attribute, iban: true
+
+This validates the format of the IBAN based on the specification for each
+country.
+
+### Known IBAN validator
+
+In your rails model:
+
+    validates :iban_attribute, known_iban: true
+
+This version additionally validates whether the bank code part of the IBAN
+(Bankleitzahl, Bank Clearing Nummer) is known by comparing it to a list of
+known bank codes. This list is provided by the `banking_data` gem and currently
+only comprises DE, AT and CH.
 
 ## Contributing
 
