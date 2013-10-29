@@ -1,4 +1,4 @@
 en:
   errors:
     messages:
-      unknown: is not known
+      unknown_bank: included bank is not known
